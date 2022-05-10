@@ -1,0 +1,62 @@
+.container_gameboard{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.panel{   
+    width: 100%;
+    padding: 20px 0;
+}
+.reinicio button{
+    background: rgb(121, 31, 255);
+    color: white;
+    font-size: calc(5px + 2vmin);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.status{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 20px 0;
+}
+.marcadores,.reinicio{
+    align-self: center;
+    text-align: left;
+}
+.reinicio button:disabled{
+    background-color: gray;
+}
+.reinicio button:focus{
+    transform: translateY(0px);
+}
+.panel_nota{
+    font-size: 1em;
+}
+
+.tablero{
+    max-width: 580px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px 0;    
+    backdrop-filter:blur(20px) brightness(110%);
+}
+/*se aplica para pantallas de maximo 600px*/
+@media (max-width: 600px) {
+    .tablero{
+        width: 400px;
+    }
+    .panel_nota{
+        font-size: .7em;
+    }
+}
+@media (max-width: 450px ) {
+    .tablero{
+        width: 310px;
+    }
+}

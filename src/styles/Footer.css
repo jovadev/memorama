@@ -1,0 +1,28 @@
+
+footer{
+    background-color: #0b48cb;
+    color: #ffffff;
+    font-size: calc(9px + 0.7vh);  
+    min-height: 100px;
+    position: relative;
+    text-align: center;
+    margin-bottom: -1px;
+    padding: 10px 0;
+}
+footer h2,footer span{
+    padding: 20px 0;
+}
+.mi-github{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    letter-spacing: 2px;
+}
+.mi-github a{
+    text-decoration: none;
+    color: #0f0f0f;
+}
+.mi-github a:hover{
+    color: #ffffff;
+}

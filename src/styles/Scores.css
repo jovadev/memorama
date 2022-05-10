@@ -1,0 +1,85 @@
+.cargando{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+.div-cargando{
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: beige;
+  padding: 30px 10px;
+  width: 70%;
+}
+#titulo_scores{
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #ffffff;
+}
+table{
+  background-color: rgb(255, 0, 200);
+}
+.qscores_table{  
+  width: fit-content;
+  max-height: 700px;
+  overflow-y: scroll;
+}
+table, th, td {
+    border-collapse: collapse;
+  }
+
+  th{
+    font-size: 1em;
+    padding: 5px 12px;
+    background-color: rgb(0, 162, 0);
+    color: white;
+    border-bottom: 2px solid rgb(19, 86, 0);
+    position: sticky;
+    top: 0;
+  }
+  td {
+    font-size: 1.1em;
+    padding: 5px;
+  }
+  td#td_usuario{
+    max-width: 100px;
+    word-wrap: break-word;
+  }
+  tr:nth-child(odd){/*escoge los hijos impar*/
+    background-color: rgb(95, 156, 255);
+  }
+  tr:hover{
+    background-color: #9a9a9a;
+  }
+
+.scores{
+    justify-content: center;
+    align-items:flex-start;
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+  }
+  @media screen and (max-width:900px) {
+    td,th{
+      font-size: 0.8em;
+      padding: 5px 5px; 
+    }
+    td#td_usuario{
+      max-width: 50px;
+      word-wrap: break-word;
+    }
+  }
+  @media screen and (max-width:500px) {
+    th{
+      font-size: .5em;
+    }
+    td{
+      font-size: .65em;
+      padding: 5px 5px; 
+    }
+    .div-cargando label{
+      font-size: 1em;
+    }
+  }

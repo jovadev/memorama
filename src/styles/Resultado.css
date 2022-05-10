@@ -1,0 +1,102 @@
+.modal-resultado{
+  background-color: rgba(0, 0, 0, 0.7);
+  position:fixed;
+  flex-direction: column;
+  align-items:  center;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index: 99999;
+  text-align: center;
+  display: none;
+  transition: all 2s linear;
+}
+.mostrar{
+  display: flex;
+}
+.div-form{
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  width: 300px;
+}
+.div_entrada{
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.entrada{
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 80%;
+  background-color: beige;
+  padding: 5px;
+  color: black;
+  margin: auto;
+  font-size: .9em;
+}
+.entrada input{
+  height: 25px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+.modal-contenido{
+    background-color:rgb(0, 99, 219);
+    width: 40%;
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin: 10% auto;
+    font-size: 1.3em;
+    qposition: relative;
+  }
+  .modal-contenido button:hover{
+    background: green;
+  }
+  .div_buttons{
+    padding-top: 20px;
+  }
+  .reinicioA, .btn_nombre{
+    padding: 10px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 150px;
+    text-align: center;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    cursor:pointer;
+  }
+  .ver_ganadores{
+    padding: 0;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 150px;
+    text-align: center;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    cursor:pointer;
+  }
+  .ver_ganadores a{
+    display:inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  @media screen and (max-width:900px){/*se aplica si la pantala mide maximo 600px*/
+    .modal-contenido{
+      width: 60%;
+    }
+  }
+  @media screen and (max-width:500px){/*se aplica si la pantala mide maximo 600px*/
+    .modal-contenido{
+      qwidth: 60%;
+      max-width: 400px;
+      font-size: 0.9em;
+    }
+    .entrada input{
+      width: 150px;
+    }
+  }

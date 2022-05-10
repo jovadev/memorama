@@ -1,0 +1,43 @@
+.div_no_encontrada{
+    border:1px solid white;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.no_encontrada{
+   backdrop-filter: blur(20px) brightness(90%);
+   color: #ffffff;
+   padding: 10px 0;
+   background-color: #000000;
+}
+.no_encontrada img{
+    border-radius: 0;
+    width: 65vw;
+    height: auto;
+    max-width: 600px;
+    border-radius: 5px;
+}
+.no_encontrada a{
+    color: #1add2a;
+    text-decoration: none;
+}
+#redirect_game{
+    padding: 15px 0;
+}
+#redirect_game span{
+    background-color: #746c6c;
+    border-radius: 5px;
+}
+#redirect_game a{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+}
+#redirect_game a:hover{
+    opacity: .5;
+    cursor: pointer;
+}

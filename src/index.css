@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #282c34;
+  qbackground:url("https://th.bing.com/th/id/R.a1d12b75ba3e1a051e080532e1e6fb76?rik=qxV%2fVgXfDVt2EA&riu=http%3a%2f%2fwww.porque.es%2fwp-content%2fuploads%2f2018%2f04%2festrellas-e1525035525626.jpg&ehk=J%2fDprl9w2KokF26gxX8VHMABCp0QZ0J61Erf1hZ1zI4%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*,*:before,*:after{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  qbox-sizing: border-box;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+button{
+  outline: none;
+  border: none;
+}
+h1{
+  color: white;
+}
+
+input:focus,.box input:active,.box button:focus,.box button:active{
+  outline:none;
+}
+
+label{
+
+  font-weight: bold;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+.contenedor{
+  min-height: calc(100vh - 90px);
+  padding-bottom: 10px;
+  text-align: center;
+}
+@media screen and (max-width:450px){
+  .contenedor{
+      min-height: calc(100vh - 65px);
+  }
+}

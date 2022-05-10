@@ -1,0 +1,208 @@
+.contenedor_logo{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contenedor_logo_img{
+    margin-left: 20px;
+    pointer-events: none;
+    width: 50px;
+    height: 50px;    
+}
+.contenedor_logo_img img,.back{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-left: -15px;
+    position: absolute;  
+}
+.front{
+    animation: flip 2s linear infinite;
+}
+.back{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+    backface-visibility:hidden;
+    animation: flip2 2s linear infinite;
+}
+@keyframes flip {
+    30%{
+        transform: rotateY(180deg);
+        backface-visibility:hidden;
+    }
+    50%{
+        transform: rotateY(180deg);
+    }   
+    80%{
+        transform: rotateY(0deg);
+    }
+}
+@keyframes flip2 {
+    30%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(0deg);
+    }   
+    80%{
+        transform: rotateY(180deg);
+    }   
+}
+.active{
+    background-color: rgba(255, 20, 20, 0.823);
+    transition: .4s;
+    cursor: default;
+} 
+.nombre_app{
+    color: white;
+    font-size: 2em;
+    padding: 0 30px;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .qcontenedor_logo_img{
+        animation: App-logo-spin infinite 5s linear;
+    }
+}
+@keyframes App-logo-spin{
+    from {
+      transform: rotateY(0deg);
+      qtransform: translateX(0);
+
+    }
+    to {
+        qtransform: translateX(10px);
+        transform: rotateY(360deg);
+    }
+}
+  
+.App-menu{
+    background-color:#282c34;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    /*box-shadow: 5px 0 10px rgba(0,0,0,.6);*/
+    justify-content: space-between;
+    border-bottom: 1px solid violet;
+
+  }  
+.mi-subfooter{
+    display: none;
+    width: 100%;
+    color: white;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+    z-index: 99999;;
+    }
+  li + li{
+      border-left: 1px solid white;
+  }
+  header ul li a{
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    color:  white;
+    display: block;
+    font-weight: bold;
+  }
+  header ul li:hover{
+    background-color: rgba(198, 201, 146, 0.823);
+    transition: .4s;
+  } 
+.btn_menu{
+    display: none;
+    margin-right: 25px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+  @media screen and (max-width:700px){
+    .btn_menu{
+        display: block;
+    }
+    .nombre_app{
+        font-size: 1.7em;
+        padding: 0 30px;
+    }
+    ul.show{
+        top:90px;
+    }
+    header ul{
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        background: #282c34;
+        top: -100vh;  
+        text-align: center;
+        transition: all 0.4s;
+        flex-direction:column;
+    }
+    header ul li{
+        margin: 30px 5px 0 5px;
+        background-color: rgb(255, 196, 0);
+        border: none;
+        border-radius: 5px;
+    }
+    header ul li:hover{
+        background:none;
+        background-color: rgb(13, 255, 0);
+    }
+    header ul li a{
+        font-size: 1.1em;
+        color: white;
+        font-weight: bold;
+        padding: 15px 0;
+    }
+    header ul li a:hover{
+        color:rgb(255, 0, 208);
+    }
+    .mi-subfooter{
+        display: block;
+        position: absolute;
+        bottom: 90px;
+        
+      }
+      .mi-subfooter > div {
+        padding: 30px 0;
+      }
+  }
+
+
+@media screen and (max-width:450px){
+    .App-menu{
+        height: 65px;
+    }
+    .btn_menu{
+        margin-right: 15px;
+    }
+    ul.show{
+        top:65px;
+      }
+    .nombre_app{
+        font-size: 1.3em;
+        padding: 0 20px;
+    }
+    .contenedor_logo_img{
+        margin-left: 15px;      
+    }
+    .contenedor_logo img,.back{
+        width: 50px;
+        height: 50px;
+    }
+    .mi-subfooter{
+        bottom: 65px;
+      }
+}
